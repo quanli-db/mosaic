@@ -1,4 +1,4 @@
-name: build main
+name: build main 
 on:
   push:
     branches-ignore:
