@@ -15,7 +15,6 @@ runs:
         - name: Configure python interpreter
           shell: bash
           run: |
-            pip install numpy==${{ matrix.numpy }}
             sudo bash <<EOF
               add-apt-repository ppa:deadsnakes/ppa
               apt update
@@ -28,6 +27,7 @@ runs:
               chmod -R 766 /databricks/
             EOF
             python${{ matrix.python_minor }} -m venv /databricks/python3
+            /databricks/python3/bin/pip install numpy==${{ matrix.numpy }}
         - name: Add packaged GDAL dependencies
           shell: bash
           run : |
