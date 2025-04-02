@@ -57,8 +57,8 @@ class CustomInstallCommand(install):
         "locales",
         "mysql-client-core-8.0",
         "netcdf-bin",
-        "libprotobuf23",
-        "libthrift-0.16.0",
+        # "libprotobuf23",
+        # "libthrift-0.16.0",
     ]
 
     @staticmethod
@@ -78,7 +78,7 @@ class CustomInstallCommand(install):
 
         # Install the .deb file
         deb_file = os.path.join(
-            os.path.dirname(__file__), "mosaic", "gdal", "gdal_3.10.0-1_amd64.deb"
+            os.path.dirname(__file__), "mosaic", "gdal", "gdal_3.10.2-1_amd64.deb"
         )
 
         if os.path.exists(deb_file):
