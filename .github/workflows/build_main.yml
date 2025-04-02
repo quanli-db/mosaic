@@ -19,7 +19,7 @@ jobs:
         python: [ 3.12.3 ]
         python_minor: [ 3.12 ]
         numpy: [ 1.26.4 ]
-        gdal: [ 3.10.2 ]
+        gdal: [ 3.10.1 ]
         spark: [ 3.5.2 ]
         R: [ 4.4.0 ]
     steps:
