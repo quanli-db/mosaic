@@ -57,6 +57,7 @@ class CustomInstallCommand(install):
         "locales",
         "mysql-client-core-8.0",
         "netcdf-bin",
+        "libodbcinst2",
         # "libprotobuf23",
         # "libthrift-0.16.0",
     ]
